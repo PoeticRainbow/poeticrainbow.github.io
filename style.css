@@ -35,7 +35,7 @@ body {
     cursor: pointer;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -48,13 +48,50 @@ ul {
     padding: 4px;
 }
 
-ul li {
+nav ul li {
     display: inline;
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+.buttons {
+    display: table;
+    text-align: center;
+}
+
+.buttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+.buttons ul li a {
+    background-image: url(images/button-128-20.png);
+    background-clip: border-box;
+    color: #ffffff;
+    font-family: 'Minecraft Seven';
+    font-size: 24px;
+}
+
+.buttons ul li a:hover {
+    background-image: url(images/button-128-20-highlighted.png);
+    cursor: pointer;
+}
+
+#githubbutton {
+    display: inline-block;
+    height: 40px;
+    width: 256px;
+    background-image: url(images/github-button.png);
+    background-position: center;
+}
+
+#githubbutton:hover {
+    background-image: url(images/github-button-highlighted.png);
 }
 
 .content {
@@ -86,4 +123,5 @@ footer {
 #githublogo {
     height: 220px;
     padding: 20px;
+    image-rendering: auto;
 }
