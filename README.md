@@ -1,2 +1,2 @@
 # poeticrainbow.github.io
-My website that contains all of my links.
+The website for the Golden Days project.
