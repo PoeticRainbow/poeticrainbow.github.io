@@ -5,83 +5,152 @@ html {
 *{
     margin: 0;
     padding: 0;
+    image-rendering: optimizeSpeed;
 }
 
-/* .navbar {
-    width: 100%;
-    height: 48px;
-    background-image: url(images/nav-bar.gif);
-    image-rendering: pixelated;
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: 48px;
-} */
+/* Basic Text Formatting */
+h1 {
+	margin-bottom: 5px;
+}
+h2 {
+    margin-top: 8px;
+	margin-bottom: 3px;
+}
+a:link {
+	color: #aaf;
+    text-decoration: none;
+}
+a:visited {
+	color: #aaf;
+}
+a:hover {
+	color: #fff;
+}
+a:active {
+	color: #ff0;
+}
+
+
 
 body {
     height: 100vh;
     width: 100%;
+	color: #e0d0d0;
     background-image: url(images/background.png);
-    image-rendering: pixelated;
-    background-position: center;
+    background-position: left;
     background-size: 48px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
-.logo {
+#logo {
     height: 40px;
     margin: 0px;
-    cursor: pointer;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    list-style-type: none;
+
+
+/* Navbar */
+/* Used for the navbar background image */
+.navbar {
+    width: 100%;
+    height: 48px;
     background-image: url(images/nav-bar.gif);
     background-repeat: repeat-x;
-    height: 40px;
-    border: 0px, black;
+	border-bottom: 3px solid #000;
+    line-height: 0px;
+}
+.navbar div {
+    height: 48px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    white-space: nowrap;
     padding: 4px;
 }
-
-nav ul li {
-    display: inline;
+.navbar a {
+    height: 12px;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    padding-left: 12px;
+}
+#linkcell {
+    padding-top: 16px;
+    vertical-align: top;
+    text-align: right;
+    width: 100%;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+
+/* Media Reel */
+#mediabackground {
+    background-color: rgba(0, 0, 0, 0.58);
+    padding-bottom: 0px;
+    width: 100%;
+}
+#mediareel {
+    text-align: center;
+    padding: 0px;
+    width: 960px;
+    margin: auto;
+    overflow-x: scroll;
+}
+#cover {
+    width: 560px;
+    margin: auto;
+}
+#cover img {
+    width: 100%;
+    image-rendering: pixelated;
 }
 
-.buttons {
+#badges{
+    margin: auto;
+}
+
+
+/* Description Text */
+#description {
+    text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 48px;
+}
+#description a:link {
+    text-decoration: underline;
+}
+#description a:visited {
+    text-decoration: underline;
+}
+
+
+/* Pack Order Image */
+#description div {
+    text-align: center;
+}
+#packorder {
+    image-rendering: pixelated;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Clickable Minecraft Buttons */
+#buttons {
     display: table;
     text-align: center;
 }
-
-.buttons ul {
+#buttons ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     height: 40px;
 }
-
-.buttons ul li a {
-    background-image: url(images/button-128-20.png);
-    background-clip: border-box;
-    color: #ffffff;
-    font-family: 'Minecraft Seven';
-    font-size: 24px;
-}
-
-.buttons ul li a:hover {
-    background-image: url(images/button-128-20-highlighted.png);
-    cursor: pointer;
-}
-
 #githubbutton {
     display: inline-block;
     height: 40px;
@@ -89,39 +158,20 @@ nav ul li a {
     background-image: url(images/github-button.png);
     background-position: center;
 }
-
 #githubbutton:hover {
     background-image: url(images/github-button-highlighted.png);
+    cursor: pointer;
 }
 
-.content {
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.trailer {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.50);
-    background-blend-mode: color-burn;
-    padding: 15px;
-}
 
+/* Footer */
 footer {
-    background-image: url(images/bedrock.png);
-    height: 500px;
+	background: #111;
+    margin-top: 75px;
+    padding: 12px;
+    height: 48px;
     text-align: center;
-}
-
-#githublink {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-
-#githublogo {
-    height: 220px;
-    padding: 20px;
-    image-rendering: auto;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
