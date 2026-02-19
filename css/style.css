@@ -1,0 +1,132 @@
+/* globals */
+:root {
+  --background: url(../images/background.png);
+}
+
+* {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  image-rendering: optimizeSpeed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e0d0d0;
+}
+img {
+  max-width: min(640px, 100vw);
+  --margin: min(8px, 100vw - 640px);
+  margin: var(--margin);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  color: #aaf;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+a:active {
+  color: #ff0;
+}
+
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#page {
+  /* min-height: 100vh; */
+  background-image: var(--background);
+  background-position: left;
+  background-size: 48px;
+  background-position-y: 48px;
+}
+#page-content {
+  /* height without navbav or footer */
+  /* height - navbar.height - navbar.border - footer.height - footer.margin-top - footer.padding - footer.padding */
+  min-height: calc(100vh - 48px - 3px - 48px - 24px - 12px - 12px);
+  max-width: 768px;
+}
+.wip {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-image: url(../images/lava.gif);
+  background-size: auto 48px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 3px 3px 2px black;
+  font-weight: 900;
+}
+/* end globals */
+
+/* navbar */
+#navbar {
+  display: flex;
+  flex: 1 0 auto;
+  min-height: 48px;
+  background-image: url(../images/nav-bar.gif);
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  border-bottom: 3px solid black;
+  text-align: right;
+  overflow: hidden;
+}
+#navbar * {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#navbar #navbar-contents {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row wrap;
+  justify-content: start;
+  /* vertical */
+  align-items: center;
+  height: 100%;
+  max-width: 960px;
+}
+
+#navbar #navbar-contents > div {
+  min-height: 48px;
+}
+
+#navbar #navbar-logo {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+}
+#navbar #logo {
+  margin: 0px;
+  height: 40px;
+}
+#navbar #navbar-links {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  align-items: center;
+}
+/* end navbar */
+
+
+/* Footer */
+footer {
+  background: #111;
+  margin-top: 24px;
+  padding: 12px;
+  height: 48px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* animation: rainbow 20s infinite ease; */
+}
