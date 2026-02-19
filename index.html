@@ -1,119 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <!-- Site Info -->
-<html lang = "en">
-<head>
+<html lang="en">
+  <head>
     <title>Golden Days - A Minecraft Time Machine</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
-    <meta charset="utf-8">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <meta charset="utf-8" />
+    <meta content="images/cover.png" property="og:image" />
+  </head>
 
-<!-- Start of Body -->
-<body>
-
-<!-- Nav Bar -->
-<div class="navbar">
-    <div>
-        <table>
-            <tbody>
-                <!-- Minecraft Style Golden Days Logo -->
-                <td>
-                    <img src="images/goldendays-text.png" id="logo">
-                </td>
-                <td id="linkcell">
-                    <!-- Text Links in Nav Bar -->
-                    <a href="https://poeticrainbow.github.io/" class="navbarlinks">Home</a>
-                    <a href="https://modrinth.com/resourcepack/golden-days" class="navbarlinks">Modrinth</a>
-                    <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days" class="navbarlinks">CurseForge</a>
-                    <a href="https://www.planetminecraft.com/texture-pack/golden-days-beta-reversion-for-modern-minecraft/" class="navbarlinks">PlanetMinecraft</a>
-                    <a href="https://github.com/PoeticRainbow/golden-days" class="navbarlinks">GitHub</a>
-                    <a href="https://discord.gg/pYH6rd6" class="navbarlinks">Discord</a>
-                </td>
-            </tbody>
-        </table>
+  <div id="page">
+    <!-- Nav Bar -->
+    <div id="navbar">
+      <div id="navbar-contents">
+        <div id="navbar-logo">
+          <img src="images/goldendays-text.png" id="logo" />
+        </div>
+        <!-- Minecraft Style Golden Days Logo -->
+        <div id="navbar-links">
+          <!-- Text Links in Nav Bar -->
+          <div>
+            <a href="index.html" class="navbarlinks">Home</a>
+          </div>
+          <div>
+            <a href="blog.html" class="navbarlinks">Blog</a>
+          </div>
+          <div>
+            <a href="https://modrinth.com/resourcepack/golden-days" class="navbarlinks">Modrinth</a>
+          </div>
+          <div>
+            <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days" class="navbarlinks">CurseForge</a>
+          </div>
+          <div>
+            <a href="https://www.planetminecraft.com/texture-pack/golden-days-beta-reversion-for-modern-minecraft/" class="navbarlinks">PlanetMinecraft</a>
+          </div>
+          <div>
+            <a href="https://github.com/PoeticRainbow/golden-days" class="navbarlinks">GitHub</a>
+          </div>
+          <div>
+            <a href="https://discord.gg/pYH6rd6" class="navbarlinks">Discord</a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 
-<br>
+    <!-- YouTube Video -->
+    <div id="promo">
+      <div id="mediabackground">
+        <div id="trailer">
+          <iframe
+            width="768"
+            height="432"
+            src="https://www.youtube.com/embed/wmCuzUFdZVM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
 
-<!-- YouTube Video -->
-<div id="mediabackground">
-    <table id="mediareel">
-        <td>
-            <div id = "trailer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wmCuzUFdZVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </td>
-        <td>
-            <div id="cover">
-                <img src="images/cover.png">
-            </div>
-        </td>
-    </table>
-</div>
+      <div id="badges">
+        <img
+          alt="GitHub release (with filter)"
+          src="https://img.shields.io/github/v/release/PoeticRainbow/golden-days?style=plastic&label=latest&link=https%3A%2F%2Fgithub.com%2FPoeticRainbow%2Fgolden-days"
+        />
+        <img
+          alt="GitHub all releases"
+          src="https://img.shields.io/github/downloads/PoeticRainbow/golden-days/total?style=plastic&logo=github&label=GitHub&link=https%3A%2F%2Fgithub.com%2FPoeticRainbow%2Fgolden-days"
+        />
+        <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days"
+          ><img
+            alt="CurseForge Downloads"
+            src="https://img.shields.io/curseforge/dt/384081?style=plastic&logo=curseforge&label=CurseForge&color=F16436&link=https%3A%2F%2Flegacy.curseforge.com%2Fminecraft%2Ftexture-packs%2Fgolden-days"
+        /></a>
+        <a href="https://modrinth.com/resourcepack/golden-days"
+          ><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/BFzJ6aQL?style=plastic&logo=modrinth&label=Modrinth&link=https%3A%2F%2Fmodrinth.com%2Fresourcepack%2Fgolden-days"
+        /></a>
+        <a href="https://discord.gg/pYH6rd6"><img alt="Discord" src="https://img.shields.io/discord/742213262791147531?logo=discord&label=Discord&style=plastic" /></a>
+      </div>
 
-<br>
+      <div class="center" id="coverimage">
+        <img src="images/cover.png" />
+      </div>
+    </div>
 
-<div id="badges">
-    <img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/PoeticRainbow/golden-days?style=plastic&label=latest&link=https%3A%2F%2Fgithub.com%2FPoeticRainbow%2Fgolden-days">
-    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/PoeticRainbow/golden-days/total?style=plastic&logo=github&label=GitHub&link=https%3A%2F%2Fgithub.com%2FPoeticRainbow%2Fgolden-days">
-    <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days"><img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/384081?style=plastic&logo=curseforge&label=CurseForge&color=F16436&link=https%3A%2F%2Flegacy.curseforge.com%2Fminecraft%2Ftexture-packs%2Fgolden-days"></a>
-    <a href="https://modrinth.com/resourcepack/golden-days"><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/BFzJ6aQL?style=plastic&logo=modrinth&label=Modrinth&link=https%3A%2F%2Fmodrinth.com%2Fresourcepack%2Fgolden-days"></a>
-    <a href="https://discord.gg/pYH6rd6"><img alt="Discord" src="https://img.shields.io/discord/742213262791147531?logo=discord&label=Discord&style=plastic"></a>
-</div>
+    <div id="page-content">
+      <!-- Start of Body -->
+      <body>
+        <!-- Description Text -->
+        <div id="description">
+          <h1>Golden Days: A Minecraft Time Machine.</h1>
+          <p>Golden Days is a texture pack for Minecraft that sends your game back in time. It changes blocks, items, mobs, and even GUI elements to be inspired by the past.</p>
+          <h2>Golden Days Base</h2>
+          <p
+            >The main pack, meant to be usable in survival gameplay and does not remove any newer features in order to make it functional. Lighting, sounds, textures, and models! Everything you need
+            for an authentic feeling experience. Use this pack on top of Programmer Art in order for it to work.</p
+          >
+          <h2>Golden Days Alpha</h2>
+          <p
+            >The Alpha addon changes a few things, the main one being the iconic Alpha grass foliage color! Use this pack on top of Golden Days Base in order for an amazing Alpha-like experience in
+            Modern Minecraft!</p
+          >
+          <br />
+          <div class="center"><img src="images/packorder.png" id="packorder" /></div>
+          <br />
+          <h2>Mod Support:</h2>
+          <p>This pack has extended capabilities using some modded features:</p>
+          <p>- Custom Colors (dyed sheep, text colors, potion colors...)</p>
+          <p>- Custom Entity Models (boats, Zombie Pigmen, Allays, Bats...)</p>
+          <br />
+          <h3>Features:</h3>
+          <p><a href="https://modrinth.com/mod/entity-model-features">Entity Model Features</a>: Gives Golden Days the ability to modify entity models.</p>
+          <p><a href="https://modrinth.com/mod/polytone">PolyTone</a>: Adds many resource pack capabilities. Custom Colors, block properties, etc.</p>
+          <p><a href="https://modrinth.com/mod/ebe">Enhanced Block Entities</a> (&lt;1.21.4): Allows block entities to use JSON block models, gives full-block shaded chest models with Golden Days</p>
+          <p><a href="https://modrinth.com/mod/colormatic">Colormatic</a> (outdated, replaced by PolyTone): Adds OptiFine Custom Colors support.</p>
+          <br />
+          <h3>Pairs Well:</h3>
+          <p><a href="https://modrinth.com/mod/nostalgic-tweaks">Nostalgic Tweaks</a>: A mod for Fabric/Forge that adds a whole ton of old Minecraft tweaks! It is really cool!</p>
+          <p><a href="https://modrinth.com/mod/moderner-beta">Moderner Beta</a>: Adds accurate beta and alpha generation back into Minecraft!</p>
+        </div>
 
-<br>
+        <!-- Minecraft Style Buttons -->
+        <div id="buttons">
+          <a href="https://github.com/PoeticRainbow/golden-days"><div id="githubbutton"> </div></a>
+        </div>
+        <!-- End of Body -->
+      </body>
+    </div>
 
-<!-- Description Text -->
-<div id="description">
-    <h1>Golden Days: A Minecraft Time Machine.</h1>
-    <p>Golden Days is a texture pack for Minecraft that sends your game back in time. It changes blocks, items, mobs, and even GUI elements to be inspired by the past.</p>
-    <h2>Golden Days Base</h2>
-    <p>The main pack, meant to be usable in survival gameplay and does not remove any newer features in order to make it functional. Lighting, sounds, textures, and models! Everything you need for an authentic feeling experience. Use this pack on top of Programmer Art in order for it to work.</p>
-    <h2>Golden Days Alpha</h2>
-    <p>The Alpha addon changes a few things, the main one being the iconic Alpha grass foliage color! Use this pack on top of Golden Days Base in order for an amazing Alpha-like experience in Modern Minecraft!</p>
-    <br>
-    <div><img src="images/packorder.png" id="packorder"></div>
-    <br>
-    <h2>Mod Support:</h2>
-    <p>This pack has extended capabilities using some modded features:</p>
-    <p>- Custom Colors (dyed sheep, text colors, potion colors...)</p>
-    <p>- Custom Entity Models (boats, Zombie Pigmen, Allays, Bats...)</p>
-    <br>
-    <h3>Features:</h3>
-    <p><a href="https://modrinth.com/mod/entity-model-features">Entity Model Features</a>: Gives Golden Days the ability to modify entity models.</p>
-    <p><a href="https://modrinth.com/mod/polytone">PolyTone</a>: Adds many resource pack capabilities. Custom Colors, block properties, etc.</p>
-    <p><a href="https://modrinth.com/mod/ebe">Enhanced Block Entities</a> (&lt;1.21.4): Allows block entities to use JSON block models, gives full-block shaded chest models with Golden Days</p>
-    <p><a href="https://modrinth.com/mod/colormatic">Colormatic</a> (outdated, replaced by PolyTone): Adds OptiFine Custom Colors support.</p>
-    <br>
-    <h3>Pairs Well:</h3>
-    <p><a href="https://modrinth.com/mod/nostalgic-tweaks">Nostalgic Tweaks</a>: A mod for Fabric/Forge that adds a whole ton of old Minecraft tweaks! It is really cool!</p>
-    <p><a href="https://modrinth.com/mod/moderner-beta">Moderner Beta</a>: Adds accurate beta and alpha generation back into Minecraft!</p>
-</div>
-
-
-
-<!-- Minecraft Style Buttons -->
-<div id="buttons">
-    <div><a href="https://github.com/PoeticRainbow/golden-days"><div id="githubbutton"></div></a></div>
-</div>
-
-
-
-<!-- End of Body -->
-</body>
-
-
-
-<!-- Start of Footer -->
-<footer>
-    <div class = "footerlinks">
+    <!-- Start of Footer -->
+    <footer>
+      <div class="footerlinks">
         <p>All original Minecraft assets are owned by Mojang.</p>
         <p>Assets unique to Golden Days made by PoeticRainbow cannot be used in other projects without permission.</p>
         <p>Golden Days accepts contributions through GitHub!</p>
-    </div>
-</footer>
-
-
+      </div>
+    </footer>
+  </div>
 </html>
