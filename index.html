@@ -19,7 +19,7 @@
     <div id="navbar">
       <div id="navbar-contents">
         <div id="navbar-logo">
-          <img src="images/goldendays-text.png" id="logo" />
+          <img src="images/goldendays-text.png" id="logo" class="no-margins" />
         </div>
         <!-- Minecraft Style Golden Days Logo -->
         <div id="navbar-links">
@@ -65,6 +65,23 @@
         </div>
       </div>
 
+      <div id="disclaimer" class="center">
+        <p>Read the instructions! This pack requires <b>Programmer Art</b>!</p>
+      </div>
+
+      <div class="center flex" style="margin-top: 16px; margin-bottom: 8px">
+        <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days" class="scale-on-hover">
+          <div class="glow flex"><img src="images/badge-base.png" class="no-margins no-padding" /> </div
+        ></a>
+        <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days-alpha" class="scale-on-hover">
+          <div class="glow flex"><img src="images/badge-alpha.png" class="no-margins no-padding" /> </div
+        ></a>
+      </div>
+
+      <div class="center" id="coverimage">
+        <img src="images/cover.png" />
+      </div>
+
       <div id="badges">
         <img
           alt="GitHub release (with filter)"
@@ -83,10 +100,6 @@
           ><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/BFzJ6aQL?style=plastic&logo=modrinth&label=Modrinth&link=https%3A%2F%2Fmodrinth.com%2Fresourcepack%2Fgolden-days"
         /></a>
         <a href="https://discord.gg/pYH6rd6"><img alt="Discord" src="https://img.shields.io/discord/742213262791147531?logo=discord&label=Discord&style=plastic" /></a>
-      </div>
-
-      <div class="center" id="coverimage">
-        <img src="images/cover.png" />
       </div>
     </div>
 
@@ -108,22 +121,31 @@
             Modern Minecraft!</p
           >
           <br />
-          <div class="center"><img src="images/packorder.png" id="packorder" /></div>
+          <div class="center"><img src="images/packorder.png" id="packorder" class="glow" /></div>
           <br />
-          <h2>Mod Support:</h2>
-          <p>This pack has extended capabilities using some modded features:</p>
-          <p>- Custom Colors (dyed sheep, text colors, potion colors...)</p>
-          <p>- Custom Entity Models (boats, Zombie Pigmen, Allays, Bats...)</p>
+          <h2>Client Mod Support:</h2>
+          <p>This pack has <b>extended capabilities</b> using some modded features:</p>
+          <p>- Config Options (Chest Model, Cobblestone texture..., requires PolyTone)</p>
+          <p>- Custom Particles (found in the Pale Garden..., requires PolyTone)</p>
+          <p>- Modifiers (Block, Item, Biome, Dimension, Fluid..., requires PolyTone)</p>
+          <p>- Custom Colors (Dyed Sheep, Text Colors, Fireworks..., requires PolyTone)</p>
+          <p>- Custom Entity Models (Boats, Zombie Pigmen, Allays, Bats..., requires EMF)</p>
           <br />
-          <h3>Features:</h3>
+          <h3>Directly Supported:</h3>
+          <p><a href="https://modrinth.com/mod/polytone">PolyTone</a>: Adds many resource pack capabilities. Config Options, Custom Colors, block properties, etc.</p>
           <p><a href="https://modrinth.com/mod/entity-model-features">Entity Model Features</a>: Gives Golden Days the ability to modify entity models.</p>
-          <p><a href="https://modrinth.com/mod/polytone">PolyTone</a>: Adds many resource pack capabilities. Custom Colors, block properties, etc.</p>
-          <p><a href="https://modrinth.com/mod/ebe">Enhanced Block Entities</a> (&lt;1.21.4): Allows block entities to use JSON block models, gives full-block shaded chest models with Golden Days</p>
-          <p><a href="https://modrinth.com/mod/colormatic">Colormatic</a> (outdated, replaced by PolyTone): Adds OptiFine Custom Colors support.</p>
-          <br />
           <h3>Pairs Well:</h3>
           <p><a href="https://modrinth.com/mod/nostalgic-tweaks">Nostalgic Tweaks</a>: A mod for Fabric/Forge that adds a whole ton of old Minecraft tweaks! It is really cool!</p>
           <p><a href="https://modrinth.com/mod/moderner-beta">Moderner Beta</a>: Adds accurate beta and alpha generation back into Minecraft!</p>
+          <h3>Not Supported:</h3>
+          <p>OptiFine: No longer the intended experience as open source replacements are available.</p>
+          <details class="spoiler">
+            <summary><b>Supported in Older Versions:</b></summary>
+            <p
+              ><a href="https://modrinth.com/mod/ebe">Enhanced Block Entities</a> (&lt;1.21.4): Allows block entities to use JSON block models, gives full-block shaded chest models with Golden Days</p
+            >
+            <p><a href="https://modrinth.com/mod/colormatic">Colormatic</a> (&lt;1.20.1): Adds OptiFine style Custom Colors support.</p>
+          </details>
         </div>
 
         <!-- Minecraft Style Buttons -->
