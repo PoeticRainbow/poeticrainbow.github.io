@@ -55,41 +55,89 @@
         <!-- Description Text -->
         <h1>Blog Posts</h1>
 
-        <div class="wip">THIS PAGE IS A WORK IN PROGRESS</div>
-
         <div class="post">
           <table class="post-bar">
             <tbody>
               <td
-                ><div class="post-title"><h2>Testing Needed!</h2></div></td
+                ><div class="post-title"><h2>Golden Days 1.15.0 for 1.20+</h2></div></td
               >
-              <td><div class="post-date">Posted 02-16-26</div></td>
+              <td><div class="post-date">Posted 02-20-26</div></td>
             </tbody>
           </table>
           <div class="post-content">
-            <p>
-              I want to make a new release of Golden Days soon before 26.1 so I can focus on catching up on the 26.1 content. I need people to download the latest development build of Golden Days Base
-              to report any large errors before I make an official release. The biggest thing I need tested is PolyTone on Fabric and/or (Neo)Forge. I have only tested in 1.21.11 PolyTone and I need
-              to make sure nothing I've done crashes other versions of PolyTone if possible. The versions I care about the most are 1.20.1, 1.21.1, 1.21.5, and 1.21.11. Please use the given format
-              below when sending your results in the thread. If you encountered issues, please describe the issue along with your answers to the environment questions below!
-            </p>
-          </div>
-        </div>
-
-        <div class="post">
-          <table class="post-bar">
-            <tbody>
-              <td
-                ><div class="post-title"><h2>Many more Options!</h2></div></td
-              >
-              <td><div class="post-date">Posted 02-15-26</div></td>
-            </tbody>
-          </table>
-          <div class="post-content">
-            <p> By my calculations... if they are correct, there are a total of 248,832 option combinations possible with the new configs (ignoring Cloud Height) </p>
-            <img
-              src="https://media.discordapp.net/attachments/1232435281907417128/1472696839869431919/golden_days_options.png?ex=699777d0&is=69962650&hm=050c9fdc1ec00ddbdc5f2b2e4de816d08ceebfa443ca7eccd3a0b31e410e6c13&=&format=webp&quality=lossless&width=1165&height=978"
-            />
+            <h1 id="the-customization-update">The Customization Update</h1>
+            <p><img src="https://github.com/user-attachments/assets/47e1cb6c-0651-4a44-a9d5-bd8c606af84a" alt="optionscomparisons" /></p>
+            <h2 id="new-">New:</h2>
+            <ul>
+              <li>Bamboo Sapling texture</li>
+              <li>Player-style Armor Stand</li>
+              <li>White Eyes Creaking Heart</li>
+              <li>New unique Charcoal texture (with new option to make coals match)</li>
+              <li>Customizer via PolyTone (1.21.11+)</li>
+              <li>Four option presets built-in (Early Beta, Late Beta, Early Release, Late Release)</li>
+              <li>Player CEM to flatten the second layer (PolyTone &amp; EMF)</li>
+              <li>Sky Dimension/Aether inspired End option (PolyTone)</li>
+              <li>Built-in Bushy Leaves option (PolyTone)</li>
+              <li>Overlay CTM option (PolyTone)</li>
+              <li>more below...</li>
+              <li>Started on 26.1 baby mobs (not done)</li>
+            </ul>
+            <h2 id="all-new-options-">All New Options:</h2>
+            <ul>
+              <li>Bushy Leaves: true, false</li>
+              <li>Overlay CTM: disabled, normal, no_tint</li>
+              <li>Beta Lighting: true, false</li>
+              <li>Disable Flat Items: true, false</li>
+              <li>Use Core Shaders: true, false</li>
+              <li>Cloud Height: -64, 320</li>
+              <li>Bricks: alpha, modern</li>
+              <li>Cobblestone: classic, hybrid, modern</li>
+              <li>Cuboid Bamboo: true, false</li>
+              <li>Fast Grass: true, false</li>
+              <li>Flatten Skins: true, false</li>
+              <li>Matching Coals: true, false</li>
+              <li>Oak Log Tops: true, false</li>
+              <li>Shadowed Leaves: true, false</li>
+              <li>Silent Chests: true, false</li>
+              <li>Solid Items: true, false</li>
+              <li>Chest Style: beta, hybrid, modern</li>
+              <li>End Style: custom, early_release, modern</li>
+              <li>XP Bar Style: hidden, custom, modern</li>
+              <li>[WIP] Picture Perfect: true, false</li>
+            </ul>
+            <h2 id="changes-">Changes:</h2>
+            <ul>
+              <li>Oak Log Tops is now a PolyTone option and not the default</li>
+              <li>Retextured Bamboo (and new 3D model option)</li>
+              <li>Retextured the Deepslate set</li>
+              <li>Retextured the Blackstone set</li>
+              <li>Retextured the Tuff set</li>
+              <li>Retextured Trapped Chest ring</li>
+              <li>Make all PolyTone modifiers explicitly targeted</li>
+              <li>Removed ResPackOpts support</li>
+            </ul>
+            <h2 id="parity-">Parity:</h2>
+            <ul>
+              <li>Edited lighting on Repeaters and Comparators</li>
+              <li>Force nearest neighbor sampling on 1.21.11+ (shader)</li>
+              <li>Changed the breaking particles on Grass Blocks</li>
+            </ul>
+            <h2 id="fixes-">Fixes:</h2>
+            <ul>
+              <li>Fixed Boats bouncing on land</li>
+              <li>Fixed White Eyes not spawning on 1.21.11+ (PolyTone)</li>
+              <li>Fixed Crying Obsidian particles not matching the base texture</li>
+            </ul>
+            <h2 id="golden-days-alpha-">Golden Days Alpha:</h2>
+            <ul>
+              <li>New option for Classic Dyes (includes dyed blocks excluding Terracotta) (PolyTone)</li>
+              <li>New option for Classic Bricks (PolyTone)</li>
+            </ul>
+            <p><img width="726" height="671" alt="all the options in golden days with polytone" src="https://github.com/user-attachments/assets/5e27e004-66ac-4cc4-94b8-d8ed367600c6" /></p>
+            <p
+              ><strong>Full Changelog</strong>:
+              <a href="https://github.com/PoeticRainbow/golden-days/compare/1.14.0...1.15.0">https://github.com/PoeticRainbow/golden-days/compare/1.14.0...1.15.0</a></p
+            >
           </div>
         </div>
         <!-- End of Body -->
