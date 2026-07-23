@@ -179,3 +179,15 @@ footer {
     box-shadow: 0px 0px 8px 0px yellow;
   }
 }
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0px 0px 4px yellow;
+  }
+  50% {
+    text-shadow: 0px 0px 8px yellow;
+  }
+  100% {
+    text-shadow: 0px 0px 4px yellow;
+  }
+}

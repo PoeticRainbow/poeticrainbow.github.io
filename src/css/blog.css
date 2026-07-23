@@ -17,7 +17,7 @@
   box-shadow: 0.5rem 0.5rem 1rem black;
 }
 .post-bar {
-  background-image: url(../images/nav-bar.gif);
+  background-image: url(/images/nav-bar.gif);
   background-repeat: repeat-x;
   background-size: auto 100%;
   padding: 0.5rem;
@@ -32,4 +32,11 @@
   color: #999;
   text-align: right;
 }
+.post ul {
+  margin-bottom: 0.5rem;
+}
 /* end blog */
+
+.post-downloads a {
+  animation: text-glow 1s infinite ease-in-out;
+}

@@ -1,0 +1,15 @@
+<div class="post">
+  <table class="post-bar">
+    <tbody>
+      <td
+        ><div class="post-title"><h2>{{ post.data.title }}</h2></div></td
+      >
+      <td><div class="post-date">Posted {{ post.data.date | dateFormatted }}</div></td>
+    </tbody>
+  </table>
+  <div class="post-content">
+    {{ post.content | safe }} 
+  </div>
+
+  {% include "downloads.html" %}
+</div>

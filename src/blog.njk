@@ -1,0 +1,31 @@
+<!doctype html>
+
+<!-- Site Info -->
+<html lang="en">
+  <head>
+    <title>Golden Days - Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    {% include "meta.html" %}
+  </head>
+
+  <div id="page">
+    {% include "navbar.html" %}
+
+    <div id="page-content">
+      <!-- Start of Body -->
+      <body>
+        <!-- Description Text -->
+        <h1>Blog Posts ({{ collections.posts | length }})</h1>
+        
+        {% for post in collections.posts %}
+          {% include "layouts/post.njk" %}
+        {% endfor %}
+
+        <!-- End of Body -->
+      </body>
+    </div>
+
+    {% include "footer.html" %}
+  </div>
+</html>
