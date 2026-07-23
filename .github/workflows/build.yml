@@ -2,8 +2,9 @@ name: Build Site and Publish
 on:
   push:
 permissions:
-  id-token: write
   contents: read
+  id-token: write
+  pages: write
 jobs:
   build:
     runs-on: ubuntu-latest
