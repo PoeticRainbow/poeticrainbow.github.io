@@ -19,7 +19,7 @@
         <h1>Blog Posts ({{ collections.posts | length }})</h1>
         
         {% for post in collections.posts %}
-          {% include "layouts/post.njk" %}
+          {% include "layouts/feed.njk" %}
         {% endfor %}
 
         <!-- End of Body -->

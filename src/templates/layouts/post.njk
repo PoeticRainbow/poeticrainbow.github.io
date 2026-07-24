@@ -1,15 +1,43 @@
-<div class="post">
-  <table class="post-bar">
-    <tbody>
-      <td
-        ><div class="post-title"><h2>{{ post.data.title }}</h2></div></td
-      >
-      <td><div class="post-date">Posted {{ post.data.date | dateFormatted }}</div></td>
-    </tbody>
-  </table>
-  <div class="post-content">
-    {{ post.content | safe }} 
-  </div>
+<!doctype html>
 
-  {% include "downloads.html" %}
-</div>
+<!-- Site Info -->
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    {% include "meta.html" %}
+  </head>
+
+  <div id="page">
+    {% include "navbar.html" %}
+
+    <div id="page-content">
+      <!-- Start of Body -->
+      <body>
+        <!-- Description Text -->
+
+        <div class="post">
+            <table class="post-bar">
+                <tbody>
+                <td
+                    ><div class="post-title"><h2>{{ title }}</h2></div></td
+                >
+                <td><div class="post-date">Posted {{ date | dateFormatted }}</div></td>
+                </tbody>
+            </table>
+            <div class="post-content">
+                {{ content | safe }} 
+            </div>
+
+            {% include "downloads.html" %}
+        </div>
+
+
+        <!-- End of Body -->
+      </body>
+    </div>
+
+    {% include "footer.html" %}
+  </div>
+</html>
