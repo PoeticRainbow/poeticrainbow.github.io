@@ -44,9 +44,9 @@ h1, h2, h3, h4, h5, h6 {
 #githubbutton {
   aspect-ratio: 256 / 40;
   height: 40px;
-  background-image: url(../images/github-button.png);
+  background-image: url(/images/github-button.png);
 }
 #githubbutton:hover {
-  background-image: url(../images/github-button-highlighted.png);
+  background-image: url(/images/github-button-highlighted.png);
 }
 /* end home page */
