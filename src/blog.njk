@@ -16,7 +16,18 @@
       <!-- Start of Body -->
       <body>
         <!-- Description Text -->
-        <h1>Blog Posts ({{ collections.posts | length }})</h1>
+        <h1>Blog Posts</h1>
+
+        <div id="jumplinks">
+          <details class="spoiler">
+          <summary><b>Jump to Post:</b></summary>
+            <ul>
+              {% for post in collections.posts %}
+              <li><a href="#{{ loop.index }}">{{ post.data.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+        </div>
         
         {% for post in collections.posts %}
           {% include "layouts/feed.njk" %}
