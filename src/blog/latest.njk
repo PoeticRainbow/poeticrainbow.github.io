@@ -1,0 +1,6 @@
+{% set post = collections.posts[0] %}
+{% set title = post.data.title %}
+{% set date = post.data.date %}
+{% set permalink = post.permalink %}
+{% set content = post.content %}
+{% include "layouts/post.njk" %}
