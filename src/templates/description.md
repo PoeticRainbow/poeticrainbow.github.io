@@ -25,11 +25,13 @@ This pack has **extended capabilities** using some modded features:
 ### Directly Supported:
 
 [PolyTone](https://modrinth.com/mod/polytone): Adds many resource pack capabilities. Config Options, Custom Colors, block properties, etc.
+
 [Entity Model Features](https://modrinth.com/mod/entity-model-features): Gives Golden Days the ability to modify entity models.
 
 ### Pairs Well:
 
 [Nostalgic Tweaks](https://modrinth.com/mod/nostalgic-tweaks): A mod for Fabric/Forge that adds a whole ton of old Minecraft tweaks! It is really cool!
+
 [Moderner Beta](https://modrinth.com/mod/moderner-beta): Adds accurate beta and alpha generation back into Minecraft!
 
 ### Not Supported:
