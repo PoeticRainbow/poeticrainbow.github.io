@@ -1,0 +1,44 @@
+<!doctype html>
+
+{% include "golden-days/js/main.html" %}
+
+<!-- Site Info -->
+<html lang="en">
+  <head>
+    <title>Golden Days - Blog</title>
+    <link rel="stylesheet" href="/golden-days/css/style.css" />
+    <link rel="stylesheet" href="/golden-days/css/blog.css" />
+    {% include "golden-days/meta.html" %}
+  </head>
+
+  <div id="page">
+    {% include "golden-days/navbar.html" %}
+
+    <div id="page-content">
+      <!-- Start of Body -->
+      <body>
+        <!-- Description Text -->
+        <h1>Blog Posts</h1>
+
+        <div id="jumplinks">
+          <details class="spoiler">
+          <summary><b>Jump to Post:</b></summary>
+            <ul>
+              {% for post in collections.posts %}
+              <li><a href="#{{ loop.index }}">{{ post.data.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+        </div>
+        
+        {% for post in collections.posts %}
+          {% include "golden-days/layouts/feed.njk" %}
+        {% endfor %}
+
+        <!-- End of Body -->
+      </body>
+    </div>
+
+    {% include "golden-days/footer.html" %}
+  </div>
+</html>

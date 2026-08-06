@@ -3,5 +3,6 @@
   "useTabs": false,
   "printWidth": 200,
   "htmlWhitespaceSensitivity": "strict",
-  "bracketSpacing": true
+  "bracketSpacing": true,
+  "cssSelectorListSameLine": true
 }

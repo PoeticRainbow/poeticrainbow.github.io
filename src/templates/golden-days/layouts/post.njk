@@ -1,0 +1,44 @@
+<!doctype html>
+
+<!-- Site Info -->
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    {% include "golden-days/meta.html" %}
+  </head>
+
+  <div id="page">
+    {% include "golden-days/navbar.html" %}
+
+    <div id="page-content">
+      <!-- Start of Body -->
+      <body>
+        <!-- Description Text -->
+        <h1>Blog Post</h1>
+
+        <div class="post">
+            <table class="post-bar">
+                <tbody>
+                <td
+                    ><div class="post-title"><h2>{{ title }}</h2></div></td
+                >
+                <td><div class="post-date">Posted {{ date | dateFormatted }}</div></td>
+                </tbody>
+            </table>
+            <div class="post-content">
+                {{ content | safe }} 
+            </div>
+
+            {% include "golden-days/downloads.html" %}
+        </div>
+
+
+        <!-- End of Body -->
+      </body>
+    </div>
+
+    {% include "golden-days/footer.html" %}
+  </div>
+</html>

@@ -1,0 +1,11 @@
+<script>
+  var audio = new Audio("https://resources.download.minecraft.net/2f/2fe092579d9637e2d160319820ee08e60a237bb7");
+
+  document.addEventListener("DOMContentLoaded", () => {
+    var hyperlinks = document.querySelectorAll("a,details");
+
+    hyperlinks.forEach((value, key, parent) => {
+      value.addEventListener("click", () => audio.play());
+    });
+  });
+</script>

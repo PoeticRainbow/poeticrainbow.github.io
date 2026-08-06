@@ -1,0 +1,28 @@
+<!doctype html>
+
+{% include "golden-days/js/main.html" %}
+
+<!-- Site Info -->
+<html lang="en">
+  <head>
+    <title>Golden Days - A Minecraft Time Machine</title>
+    <link rel="stylesheet" href="/golden-days/css/style.css" />
+    <link rel="stylesheet" href="/golden-days/css/index.css" />
+    {% include "golden-days/meta.html" %}
+  </head>
+
+  <div id="page">
+    {% include "golden-days/navbar.html" %}
+
+    <div id="page-content">
+      <!-- Start of Body -->
+      <body>
+        <div id="description">
+          {% md "golden-days/license.md" %}
+        </div>
+      </body>
+    </div>
+
+    {% include "golden-days/footer.html" %}
+  </div>
+</html>

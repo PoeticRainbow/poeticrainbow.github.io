@@ -3,85 +3,64 @@
 <!-- Site Info -->
 <html lang="en">
   <head>
-    <title>Golden Days - A Minecraft Time Machine</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/index.css" />
-    {% include "meta.html" %}
+    <title>PoeticRainbow's Site</title>
+    <link rel="stylesheet" href="/home/css/style.css" />
+    <link rel="icon" href="/home/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta content="PoeticRainbow's Site" property="og:title" />
+    <meta content="A website for all of the projects by PoeticRainbow" property="og:description" />
+    <meta content="https://poeticrainbow.github.io/" property="og:url" />
+    {# <meta content="https://poeticrainbow.github.io/images/cover.png" property="og:image" /> #}
   </head>
 
-  <div id="page">
-    {% include "navbar.html" %}
-
-    <!-- YouTube Video -->
-    <div id="promo">
-      <div id="mediabackground">
-        <div id="trailer">
-          <iframe
-            width="768"
-            height="432"
-            src="https://www.youtube.com/embed/wmCuzUFdZVM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+  <!-- Start of Body -->
+  <body> 
+    <div id="main">
+      <div id="sidebar">
+        <div id="sidebar-content">
+          {% for project in collections.public_projects %}
+            <div id="{{ project.fileSlug }}" class="project-button">
+              <a href="{{ project.data.url }}">
+                <img src="/home/images/{{ project.fileSlug }}.png" alt="{{ project.data.name }}" class="project-img" title="{{ project.data.name }}">
+              </a>
+            </div>
+          {% endfor %}
         </div>
       </div>
 
-      <div id="disclaimer" class="center">
-        <p>Read the instructions! This pack requires <b>Programmer Art</b>!</p>
-      </div>
-
-      <div class="center flex" style="margin-top: 16px; margin-bottom: 8px">
-        <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days" class="scale-on-hover">
-          <div class="glow flex"><img src="/images/badge-base.png" class="no-margins no-padding" /> </div
-        ></a>
-        <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days-alpha" class="scale-on-hover">
-          <div class="glow flex"><img src="/images/badge-alpha.png" class="no-margins no-padding" /> </div
-        ></a>
-      </div>
-
-      <div class="center" id="coverimage">
-        <img src="/images/cover.png" />
-      </div>
-
-      <div id="badges">
-        <img
-          alt="GitHub release (with filter)"
-          src="https://img.shields.io/github/v/release/PoeticRainbow/golden-days?style=plastic&label=latest&link=https%3A%2F%2Fgithub.com%2FPoeticRainbow%2Fgolden-days"
-        />
-        <img
-          alt="GitHub all releases"
-          src="https://img.shields.io/github/downloads/PoeticRainbow/golden-days/total?style=plastic&logo=github&label=GitHub&link=https%3A%2F%2Fgithub.com%2FPoeticRainbow%2Fgolden-days"
-        />
-        <a href="https://legacy.curseforge.com/minecraft/texture-packs/golden-days"
-          ><img
-            alt="CurseForge Downloads"
-            src="https://img.shields.io/curseforge/dt/384081?style=plastic&logo=curseforge&label=CurseForge&color=F16436&link=https%3A%2F%2Flegacy.curseforge.com%2Fminecraft%2Ftexture-packs%2Fgolden-days"
-        /></a>
-        <a href="https://modrinth.com/resourcepack/golden-days"
-          ><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/BFzJ6aQL?style=plastic&logo=modrinth&label=Modrinth&link=https%3A%2F%2Fmodrinth.com%2Fresourcepack%2Fgolden-days"
-        /></a>
-        <a href="https://discord.gg/pYH6rd6"><img alt="Discord" src="https://img.shields.io/discord/742213262791147531?logo=discord&label=Discord&style=plastic" /></a>
-      </div>
-    </div>
-
-    <div id="page-content">
-      <!-- Start of Body -->
-      <body>
-        <!-- Description Text -->
+      <div id="content"> 
         <div id="description">
-          {% md "description.md" %}
+          {% md "home/index.md" %}
         </div>
 
-        <!-- Minecraft Style Buttons -->
-        <div id="buttons">
-          <a href="https://github.com/PoeticRainbow/golden-days"><div id="githubbutton"> </div></a>
-        </div>
-        <!-- End of Body -->
-      </body>
-    </div>
+        <h2>Public Projects</h2>
+        <table>
+          {% for project in collections.public_projects %}
+            <tr>
+              <td>
+                {{ project.data.name }}
+              </td>
+              <td>
+                {{ project.content | safe }}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
 
-    {% include "footer.html" %}
+        <h2>Private Projects</h2>
+        <table>
+          {% for project in collections.private_projects %}
+            <tr>
+              <td>
+                {{ project.data.name }}
+              </td>
+              <td>
+                {{ project.content | safe }}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </body>
   </div>
 </html>
